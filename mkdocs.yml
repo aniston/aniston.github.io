@@ -1,0 +1,76 @@
+# Project information
+site_name: sandbox & external demo
+site_url: https://aniston.github.io
+site_author: Aniston Fernandes
+site_description: >-
+  Presenting Demos scoped with trial and error
+
+# Repository
+repo_name: aniston.github.io
+repo_url: https://github.com/aniaton/aniston.github.io
+
+# Customization
+# extra:
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+   - git-revision-date-localized
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Home: index.md  # main content here
+  - testIframe: testIframe.md
+  #- About: about.md
+  #- Blog posts:  # do not put too many categories until enough posts
+    #- OSS in use: oss/oss.md
+    #- Pragmatic Security Testing: pragmaticST/article.md
+    #- Proxying traffic in iOS13: blog/proxyIos13/article.md
+    #- TLS Handshake: blog/tlsHandshake/article.md
+
+    #- Volume Calculations for Digital Elevation Models in Python (volpy) : https://agu3rra.github.io/volpy/
